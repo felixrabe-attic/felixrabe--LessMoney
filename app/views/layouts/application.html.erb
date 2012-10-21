@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <title>LessMoney</title>
   <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag "application" %>
@@ -8,7 +10,14 @@
 </head>
 <body>
 
-<%= yield %>
+<div data-role="page">
+  <div data-role="header">
+    <h1><%= yield :heading %></h1>
+  </div>
+  <div data-role="content">
+    <%= yield %>
+  </div>
+</div>
 
 </body>
 </html>
