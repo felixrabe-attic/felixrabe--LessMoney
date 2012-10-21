@@ -20,4 +20,4 @@ technically, it:
 - can be used with little or no Internet connection
 - is implemented in Ruby on Rails
 - is published on GitHub
-- is licensed as Open Source under the GNU GPLv3
+- is licensed as Open Source under the GNU Affero GPLv3
