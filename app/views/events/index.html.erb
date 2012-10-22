@@ -1,7 +1,7 @@
 <% content_for :heading do %>Listing events<% end %>
 
 <!-- <ul data-role="listview" data-filter="true"> -->
-<ul data-role="listview" data-filter="false">
+<ul data-role="listview" data-inset="true" data-filter="false">
   <% @events.each do |event| %>
     <li><%= event.description %> <%= event.amount %>
       <ul>
