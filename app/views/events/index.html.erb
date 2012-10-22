@@ -1,13 +1,13 @@
 <% content_for :heading do %>Listing events<% end %>
 
-<!-- <ul data-role="listview" data-filter="true"> -->
-<ul data-role="listview" data-inset="true" data-filter="false">
+<!-- <ul data-jqm-role="listview" data-jqm-filter="true"> -->
+<ul data-jqm-role="listview" data-jqm-inset="true" data-jqm-filter="false">
   <% @events.each do |event| %>
     <li><%= event.description %> <%= event.amount %>
       <ul>
-        <li><%= link_to 'Show', event %></li>
-        <li><%= link_to 'Edit', edit_event_path(event) %></li>
-        <li><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' } %></li>
+        <li><%= link_to 'Show', event, html_options: { "data-jqm-ajax" => "false" } %></li>
+        <li><%= link_to 'Edit', edit_event_path(event), html_options: { "data-jqm-ajax" => "false" } %></li>
+        <li><%= link_to 'Destroy', event, method: :delete, data: { confirm: 'Are you sure?' }, html_options: { "data-jqm-ajax" => "false" } %></li>
       </ul>
     </li>
   <% end %>
